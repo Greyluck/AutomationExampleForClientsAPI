@@ -1,0 +1,42 @@
+<html>
+<head><title>Test page 2</title></head>
+<body>
+
+<script>
+	const queryString = window.location.search;
+	console.log(queryString);
+	const urlParams = new URLSearchParams(queryString);
+	const fname = urlParams.get('fname')
+	const lname = urlParams.get('lname')
+	const name = fname + '++' + lname
+
+	window.onload = function(){
+    	document.getElementById('name').innerHTML = name;
+	};
+</script>
+
+<div style="margin: auto; max-width: 500px;">
+
+<h2>Welcome <span id="name"></span>
+<h2>Enter Address information</h2>
+
+	<form action="test3.html">
+
+		<label for="street1">Street Address:</label><br>
+  		<input type="text" id="street1" name="street1"><br>
+  		<label for="street2">Street Address:</label><br>
+  		<input type="text" id="street2" name="street2"><br>
+
+  		<label for="state">State:</label><br>
+  		<input type="text" id="state" name="state"><br>
+  		<label for="country">Country:</label><br>
+  		<input type="text" id="country" name="country"><br>
+  		<br>
+  		<input type="submit" value="Submit">
+
+	</form>
+
+</div>
+
+</body>
+</html>

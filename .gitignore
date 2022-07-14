@@ -1,0 +1,5 @@
+# Project exclude paths
+/IonateTest/target/
+Project/AutomaticTestForDemo/target/surefire-reports/com.AutomationProject.AppTest.txt
+Project/AutomaticTestForDemo/target/surefire-reports/TEST-com.AutomationProject.AppTest.xml
+Project/AutomaticTestForDemo/target/surefire-reports/com.AutomationProject.AppTest.txt
