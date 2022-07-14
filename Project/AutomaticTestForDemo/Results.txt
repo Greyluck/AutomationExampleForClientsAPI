@@ -1,0 +1,42 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.example.ionate:AutomationProject >----------------
+[INFO] Building IonateTest 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ AutomationProject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Emilio\Desktop\Proyectos de trabajo\AutomationExampleForClientsAPI\Project\AutomaticTestForDemo\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ AutomationProject ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ AutomationProject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Emilio\Desktop\Proyectos de trabajo\AutomationExampleForClientsAPI\Project\AutomaticTestForDemo\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ AutomationProject ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ AutomationProject ---
+[INFO] Surefire report directory: C:\Users\Emilio\Desktop\Proyectos de trabajo\AutomationExampleForClientsAPI\Project\AutomaticTestForDemo\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.AutomationProject.AppTest
+Test case completed successfully
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.932 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.863 s
+[INFO] Finished at: 2022-07-14T17:48:30-03:00
+[INFO] ------------------------------------------------------------------------
+mvn test 
+mvn test 
