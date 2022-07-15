@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="330654d2-ef3c-48b3-8cbd-d202c7a29156" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SimpleInterest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SimpleInterest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/BasicBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/BasicBrowser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/SimpleInterest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/SimpleInterest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +52,7 @@
       <recent name="com.AutomationProject" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AutomationProject.App" />
       <module name="AutomationProject" />
@@ -87,8 +83,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.AppTest" />
       </list>
     </recent_temporary>
   </component>

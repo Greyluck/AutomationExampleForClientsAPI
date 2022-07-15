@@ -15,6 +15,10 @@ public class BasicBrowser {
         System.out.println("Exceuting Basic Browser");
     };
 
+    public static boolean returnWebTestResult() throws InterruptedException {
+        return BasicBrowser.executeSimpleUITest();
+    }
+
     public static boolean executeSimpleUITest() throws InterruptedException {
 
         //----------------------------------------------------------------------

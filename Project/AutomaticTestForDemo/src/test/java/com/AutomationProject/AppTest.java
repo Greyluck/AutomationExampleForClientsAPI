@@ -24,11 +24,9 @@ public class AppTest
         //assertEquals("TestFail. ", 35000.0, result);
 
         /** This make a web test*/
-        boolean myWebPageResult = App.returnWebTestResult();
+        boolean myWebPageResult = BasicBrowser.returnWebTestResult();
         assertEquals("Test failed. ", true, myWebPageResult);
     }
-
-    
 
     /**
      * @return the suite of tests being tested
