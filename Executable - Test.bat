@@ -1,4 +1,5 @@
 @echo off
 echo Starting Automated test using executable file
 cd Project\AutomaticTestForDemo
-mvn clean install test
+call mvn clean install test
+cmd /k
