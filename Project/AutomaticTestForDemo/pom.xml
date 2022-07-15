@@ -1,19 +1,29 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<!-- This is the maven pom.xml. It contains information about the project
+ 	 and details of various configurations used by Maven to build the project-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <!--Object model version that this POM is using-->
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example.ionate</groupId>
+
+  <!-- Project information-->
+  <groupId>com.example.MavenExampleProject_GroupIDName</groupId>
   <artifactId>AutomationProject</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>IonateTest</name>
+  <name>MavenExampleProject_Name</name>
   <url>http://maven.apache.org</url>
 
+  <!-- Properties -->
   <properties>
     <maven.compiler.source>7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <!-- Dependencies -->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -28,7 +38,16 @@
       <version>4.1.2</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+
   </dependencies>
+
+  <!-- Build information -->
   <build>
     <plugins>
       <plugin>
@@ -45,4 +64,5 @@
       </plugin>
     </plugins>
   </build>
+
 </project>

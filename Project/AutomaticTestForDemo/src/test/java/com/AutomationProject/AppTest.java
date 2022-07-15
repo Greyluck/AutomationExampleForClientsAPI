@@ -1,9 +1,11 @@
 package com.AutomationProject;
-
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+/**
+ * This where the test cases are called.
+ */
 public class AppTest 
     extends TestCase
 {

@@ -6,8 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="330654d2-ef3c-48b3-8cbd-d202c7a29156" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.AutomationProject.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.AutomationProject.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.AutomationProject.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.AutomationProject.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/LaunchBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/BasicBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/LaunchBrowser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.AutomationProject.AppTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.AutomationProject.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
