@@ -21,6 +21,7 @@ public class BasicBrowser {
 
     public static boolean executeSimpleUITest() throws InterruptedException {
 
+        //@TODO: This is hardcoded to make a quick web test, it should be improved later
         //----------------------------------------------------------------------
         // Basic settings
         String webPageToBeTested = "https://asimplewebpage.netlify.app/";
