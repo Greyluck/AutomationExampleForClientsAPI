@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="330654d2-ef3c-48b3-8cbd-d202c7a29156" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Executable - Test.bat" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/APIExampleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AutomationProject-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +61,9 @@
       <recent name="RestAplications" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.AutomationProject" />
       <recent name="com.RestAplications.ws.rest.service" />
       <recent name="com.AutomationProject.rest" />
-      <recent name="com.AutomationProject" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.AppTest">

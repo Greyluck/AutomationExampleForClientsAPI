@@ -27,57 +27,13 @@ public class AppTest
         super( testName );
         System.out.println("Starting AppTest");
 
-        //Set parameters
-        String url = "http://example.com";
-        String charset = java.nio.charset.StandardCharsets.UTF_8.name(); // Or just "UTF-8"
-        String param1 = "value1";
-        String param2 = "value2";
-
-        //Create the query
-        String query = null;
-        String URLWithQuery = null;
-        try {
-            query = String.format("param1=%s&param2=%s",
-                    URLEncoder.encode(param1, charset),
-                    URLEncoder.encode(param2, charset));
-            URLWithQuery = url + "?" + query;
-            System.out.println("Using the following url + query ["+URLWithQuery+"]");
-
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-
-        //Sending the query
-        URLConnection connection = null;
-        try {
-            connection = new URL(URLWithQuery).openConnection();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        connection.setRequestProperty("Accept-Charset", charset);
-        InputStream response = null;
-        try {
-            response = connection.getInputStream();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        //Print response
-        try (Scanner scanner = new Scanner(response)) {
-            String responseBody = scanner.useDelimiter("\\A").next();
-            System.out.print("Bellow this line is the response" +
-                    "\n------------------------------------------------------------"+
-                    responseBody+
-                    "\n------------------------------------------------------------\n");
-        }
-
+        boolean step1 = APIRequest.executeApiRequest(
+                "https://www.freetogame.com/api/games",
+                "example",
+                "example");
         //Asserts
-        boolean result;
         System.out.println("Finishing AppTest");
-        result= TRUE; //@TODO: This is hardcoded for testing
-        assertEquals("TestFail. ", true, result);
-
+        assertEquals("TestFail. ", true, step1);
     }
 
     /**
