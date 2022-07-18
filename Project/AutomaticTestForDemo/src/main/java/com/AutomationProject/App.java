@@ -10,7 +10,7 @@ public class App
 {
     public static void main( String[] args ) {
         System.out.println("Running the main app");
-        System.out.println("This won't execute test cases. Use the 'mvn test' command.");
+        System.out.println("This won't execute test cases. Use the 'mvn test' command or the automatic file");
         System.out.println("Main app has finished");
     }
 }

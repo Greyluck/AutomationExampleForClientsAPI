@@ -14,6 +14,7 @@ The project uses the following:
  - Maven (Maven is used to define project structure, dependencies, build, and test management.)
  - Selenium WebDriver (Selenium is used to perfom Web/UI testing)
  - JUnit
+ - Jetty & Glassfis (For Api Testing)
 
 
 Executing tests

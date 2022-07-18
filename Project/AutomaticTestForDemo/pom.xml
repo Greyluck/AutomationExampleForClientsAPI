@@ -49,6 +49,8 @@
   <!-- Build information -->
   <build>
     <plugins>
+
+      <!-- Maven -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
