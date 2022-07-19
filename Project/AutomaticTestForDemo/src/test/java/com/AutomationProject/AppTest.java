@@ -29,7 +29,7 @@ public class AppTest extends TestCase {
                 "category","mmorpg");
         myApiRequest.concatenateURLWithQuery();
         myApiRequest.executeGETApiRequest();
-        myApiRequest.printRequestResponse();
+        myApiRequest.printRequestShortResponse(100);
 
         //Asserts
         assertEquals("The response is Null.", true, myApiRequest.validateResponseExist());

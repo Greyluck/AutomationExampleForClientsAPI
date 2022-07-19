@@ -91,15 +91,31 @@ public class APIRequest {
         try (Scanner scanner = new Scanner(response)) {
             responseBody = scanner.useDelimiter("\\A").next();
             System.out.print("Bellow this line is the response" +
-                    "\n------------------------------------------------------------\n"+
-                    responseBody+
-                    "\n------------------------------------------------------------\n");
+                "\n------------------------------------------------------------\n"+
+                responseBody+
+                "\n------------------------------------------------------------\n");
+        }
+    }
+
+    public static void printRequestShortResponse(int length){
+        try (Scanner scanner = new Scanner(response)) {
+            responseBody = scanner.useDelimiter("\\A").next();
+            String input = responseBody;//input string
+            String output = "";         //substring containing first characters
+            if (input.length() > length){
+                output = input.substring(0, length);
+            }
+            else{output = input;}
+            System.out.print("Bellow this line is the response" +
+                "\n------------------------------------------------------------\n"+
+                output+
+                "\n------------------------------------------------------------\n");
         }
     }
 
     public static boolean validateTextExistsInResponse(String textToBeSearched){
         //Returns True if text exists in the response. Be aware this is case-sensitive!
-        //System.out.print("Response3:"+responseBody.toString().contains(textToBeSearched));
-        return responseBody.contains(textToBeSearched);
+        System.out.print("Is the game in the response: "+responseBody.toString().contains(textToBeSearched));
+        return responseBody.toString().contains(textToBeSearched);
     }
 }

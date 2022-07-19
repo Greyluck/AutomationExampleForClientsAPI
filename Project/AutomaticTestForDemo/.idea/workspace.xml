@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="330654d2-ef3c-48b3-8cbd-d202c7a29156" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Executable - Check Results.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Executable - Check Results.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Executable - MultipleSelector.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Executable - MultipleSelector.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SeleniumBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SeleniumBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/UITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/UITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/APIExampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AutomationProject-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +75,7 @@
       <recent name="com.AutomationProject.rest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UITest">
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AutomationProject.App" />
       <module name="AutomationProject" />
@@ -127,9 +134,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.UITest" />
         <item itemvalue="Application.SeleniumBrowser" />
-        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>

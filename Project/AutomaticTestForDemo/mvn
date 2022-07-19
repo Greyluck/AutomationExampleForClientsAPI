@@ -1,0 +1,1 @@
+Executing just API test using - clean install test -Dtest=”AppTest”
