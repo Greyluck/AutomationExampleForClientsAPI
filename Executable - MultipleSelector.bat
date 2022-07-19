@@ -30,14 +30,13 @@ call mvn clean install test
 goto selector
 
 :API
-ECHO Executing just API test using
-ECHO Command used: mvn clean install test -Dtest=”AppTest”
-call mvn clean install test -Dtest=”AppTest”
+ECHO Executing just API test 
+call mvn clean install test -Dtest=AppTest
 goto selector
 
 :UI
 ECHO Executing just UI tests
-call mvn clean install test -Dtest=”UITest”
+call mvn clean install test -Dtest=UITest
 goto selector
 
 :end
