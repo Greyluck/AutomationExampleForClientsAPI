@@ -5,7 +5,7 @@ import junit.framework.TestSuite;
 
 import java.io.InputStream;
 
-/** This where the test case is defined. */
+/** This is where the test case is defined. */
 public class AppTest extends TestCase {
     /** Create the test case
      * @param testName name of the test case
@@ -14,9 +14,12 @@ public class AppTest extends TestCase {
     // This test will perform the search of a Game in a web page.
     public AppTest( String testName ){
         super( testName );
-        System.out.println("Starting Test");
 
+        //Definitions
         String gameName1 = "Diablo Immortal";
+
+        //Start
+        System.out.println("Starting api request Test");
 
         //Steps
         APIRequest myApiRequest = new APIRequest();

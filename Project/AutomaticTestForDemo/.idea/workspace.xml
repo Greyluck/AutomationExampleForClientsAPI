@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="330654d2-ef3c-48b3-8cbd-d202c7a29156" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SimpleInterest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/APIExampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SeleniumBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SeleniumBrowser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/Interest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/UITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/UITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/APIExampleTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,13 +68,26 @@
       <recent name="com.AutomationProject.rest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="JUnit.UITest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AutomationProject.App" />
       <module name="AutomationProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.AutomationProject.AppTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumBrowser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AutomationProject.SeleniumBrowser" />
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AutomationProject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,8 +110,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AutomationProject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.AutomationProject" />
+      <option name="MAIN_CLASS_NAME" value="com.AutomationProject.UITest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UITest" />
+        <item itemvalue="Application.SeleniumBrowser" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.App" />
       </list>
