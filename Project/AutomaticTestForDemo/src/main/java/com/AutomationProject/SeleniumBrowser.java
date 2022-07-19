@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 public class SeleniumBrowser {
     public static WebDriver driver = null;
@@ -23,6 +24,9 @@ public class SeleniumBrowser {
         // set chromeDriver path
         System.setProperty("webdriver.chrome.driver",chromeDriverPath);
         driver = new ChromeDriver();
+
+        // set chromeDrive waits
+        driver.manage().timeouts().implicitlyWait(sleepTime, TimeUnit.MICROSECONDS);
 
         // open the web app
         driver.manage().window().maximize();

@@ -111,6 +111,11 @@ public class APIRequest {
     public static boolean validateTextExistsInResponse(String textToBeSearched){
         //Returns True if text exists in the response. Be aware this is case-sensitive!
         //ForDebug: System.out.print("Is the game in the response: "+responseBody.toString().contains(textToBeSearched));
+        if (responseBody.toString().contains(textToBeSearched)==true) {
+            System.out.println("The searched text (" + textToBeSearched + ") is in the list.");
+        }else{
+            System.out.println("The searched text (" + textToBeSearched + ") is NOT in the list.");
+        }
         return responseBody.toString().contains(textToBeSearched);
     }
 }

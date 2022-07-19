@@ -10,12 +10,12 @@ ECHO.
 
 :SELECTOR
 ECHO Choose the number of the test you want to execute
-ECHO  1 - Execute Main tests
+ECHO  1 - Execute All tests
 ECHO  2 - Execute API test (API REST)
 ECHO  3 - Execute UI tests (Selenium)
 ECHO. 
 set choice=
-set /p choice=Type the number to print text, an press enter
+set /p choice=Type the number to print text, an press enter 
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto MAIN
 if '%choice%'=='2' goto API

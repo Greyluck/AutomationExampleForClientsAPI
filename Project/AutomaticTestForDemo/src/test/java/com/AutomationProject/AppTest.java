@@ -13,7 +13,6 @@ public class AppTest extends TestCase {
      * @param testName name of the test case
      */
 
-    // This test will perform the search of a Game in a web page.
     public AppTest( String testName ){
         super( testName );
 

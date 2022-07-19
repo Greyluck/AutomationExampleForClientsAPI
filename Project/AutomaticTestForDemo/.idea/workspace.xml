@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="330654d2-ef3c-48b3-8cbd-d202c7a29156" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Executable - MultipleSelector.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Executable - MultipleSelector.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SeleniumBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SeleniumBrowser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AutomationProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AutomationProject-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/SeleniumBrowser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/SeleniumBrowser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" afterDir="false" />
     </list>
@@ -72,7 +75,7 @@
       <recent name="com.AutomationProject.rest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="JUnit.UITest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AutomationProject.App" />
       <module name="AutomationProject" />
@@ -146,9 +149,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UITest" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.APITest" />
-        <item itemvalue="JUnit.UITest" />
         <item itemvalue="Application.SeleniumBrowser" />
         <item itemvalue="Application.App" />
       </list>
