@@ -19,13 +19,11 @@ public class APIRequest {
     static String charset = java.nio.charset.StandardCharsets.UTF_8.name(); // Or just "UTF-8"
     static String url;
 
-    static String param1 = "";
-    static String param2 = "";
-    static String category1 = "";
-    static String category2 = "";
+    static String queryParam = "";
+    static String queryValue = "";
 
     static String query = "";
-    static String URLWithQuery = "";
+
 
     static InputStream response = null;
     static String responseBody = "";
@@ -34,22 +32,18 @@ public class APIRequest {
     public static void setURL(String myURL){
         url = myURL;
     }
-    public static void setParameters(String myCategory1,String myParam1,String myCategory2,String myParam2){
-        category1 = myCategory1;
-        category2 = myCategory2;
-        param1 = myParam1;
-        param2 = myParam2;
-    }
 
-    public static void concatenateURLWithQuery(){
-        //Create the query. (This part transform the parameters in the correct form to be used in the query.
+    public static void addParameters(String myParam, String myValue){
+        queryParam = myParam;
+        queryValue = myValue;
         try {
-            query = String.format(category1+"=%s&"+category2+"=%s",
-                    URLEncoder.encode(param1, charset),
-                    URLEncoder.encode(param2, charset));
-            URLWithQuery = url + "?" + query;
-            System.out.println("Using the following url + query ["+URLWithQuery+"]");
-
+            query = String.format(APIRequest.queryParam+"=%s",
+                    URLEncoder.encode(APIRequest.queryValue, charset));
+            if (url.contains("?")) {
+                url = url + "&" + query;
+            }else{
+                url = url + "?" + query;
+            }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -71,9 +65,10 @@ public class APIRequest {
     // Methods
     public static void executeGETApiRequest(){
         //Sending the query
+        System.out.println("Using the following query ["+url+"]");
         URLConnection connection = null;
         try {
-            connection = new URL(URLWithQuery).openConnection();
+            connection = new URL(url).openConnection();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -106,16 +101,16 @@ public class APIRequest {
                 output = input.substring(0, length);
             }
             else{output = input;}
-            System.out.print("Bellow this line is the response" +
+            System.out.print("Bellow this line is the start of the response" +
                 "\n------------------------------------------------------------\n"+
-                output+
+                output+"..."+
                 "\n------------------------------------------------------------\n");
         }
     }
 
     public static boolean validateTextExistsInResponse(String textToBeSearched){
         //Returns True if text exists in the response. Be aware this is case-sensitive!
-        System.out.print("Is the game in the response: "+responseBody.toString().contains(textToBeSearched));
+        //ForDebug: System.out.print("Is the game in the response: "+responseBody.toString().contains(textToBeSearched));
         return responseBody.toString().contains(textToBeSearched);
     }
 }

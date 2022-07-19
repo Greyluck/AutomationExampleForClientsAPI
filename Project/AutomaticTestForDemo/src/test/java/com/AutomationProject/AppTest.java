@@ -3,9 +3,11 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-import java.io.InputStream;
+/**
+ * In this case a simple query is sent to www.freetogame.com page to check if a specific game matches
+ * the selected categories.
+ */
 
-/** This is where the test case is defined. */
 public class AppTest extends TestCase {
     /** Create the test case
      * @param testName name of the test case
@@ -24,12 +26,11 @@ public class AppTest extends TestCase {
         //Steps
         APIRequest myApiRequest = new APIRequest();
         myApiRequest.setURL("https://www.freetogame.com/api/games");
-        myApiRequest.setParameters(
-                "platform","pc",
-                "category","mmorpg");
-        myApiRequest.concatenateURLWithQuery();
+        myApiRequest.addParameters("platform","pc");
+        myApiRequest.addParameters("category","mmorpg");
+        myApiRequest.addParameters("sort-by","alphabetical");
         myApiRequest.executeGETApiRequest();
-        myApiRequest.printRequestShortResponse(100);
+        myApiRequest.printRequestShortResponse(80);
 
         //Asserts
         assertEquals("The response is Null.", true, myApiRequest.validateResponseExist());
