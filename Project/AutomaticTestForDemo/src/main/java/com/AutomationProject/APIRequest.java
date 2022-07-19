@@ -9,23 +9,28 @@ import java.net.URLEncoder;
 import java.util.Scanner;
 
 /**
- * This class exists only the calculate an interest.
+ * This class exists only to calculate an interest.
  * (Its main utility is to be used to test the main class)
  */
 public class APIRequest {
-    public static boolean executeApiRequest(String myURL, String myParam1, String myParam2){
+    public static boolean executeGETApiRequest(String myURL,
+                                               String myCategory1, String myParam1,
+                                               String myCategory2, String myParam2){
 
         //Set parameters
         String charset = java.nio.charset.StandardCharsets.UTF_8.name(); // Or just "UTF-8"
         String url = myURL;
         String param1 = myParam1;
         String param2 = myParam2;
+        String category1= myCategory1;
+        String category2= myCategory2;
 
-        //Create the query
+
+        //Create the query. (This part transform the parameters in the correct form to be used in the query.)
         String query = null;
         String URLWithQuery = null;
         try {
-            query = String.format("param1=%s&param2=%s",
+            query = String.format(category1+"=%s&"+category2+"=%s",
                     URLEncoder.encode(param1, charset),
                     URLEncoder.encode(param2, charset));
             URLWithQuery = url + "?" + query;
