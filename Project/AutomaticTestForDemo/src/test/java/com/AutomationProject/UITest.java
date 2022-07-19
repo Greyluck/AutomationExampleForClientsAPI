@@ -6,17 +6,17 @@ import junit.framework.TestSuite;
 /**
  * This where the test cases are defined.
  */
-public class JustUI
+public class UITest
 
     extends TestCase {
     /**
      * Create the test case
      * @param testName name of the test case
      */
-    public JustUI(String testName ) throws InterruptedException {
+    public UITest(String testName ) throws InterruptedException {
 
         /** This make a web test*/
-        boolean myWebPageResult = BasicBrowser.returnWebTestResult();
+        boolean myWebPageResult = SeleniumBrowser.returnWebTestResult();
         assertEquals("Test failed. ", true, myWebPageResult);
     }
 
@@ -25,7 +25,7 @@ public class JustUI
      */
     public static Test suite()
     {
-        return new TestSuite( JustUI.class );
+        return new TestSuite( UITest.class );
     }
 
     /**

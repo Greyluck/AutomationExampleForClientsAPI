@@ -3,29 +3,36 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.io.InputStream;
+
 /** This where the test case is defined. */
 public class AppTest extends TestCase {
     /** Create the test case
      * @param testName name of the test case
      */
 
-    public AppTest( String testName ) throws InterruptedException {
+    // This test will perform the search of a Game in a web page.
+    public AppTest( String testName ){
         super( testName );
         System.out.println("Starting Test");
 
-        // Executing the request
-        boolean step1 = APIRequest.executeGETApiRequest(
-                "https://www.freetogame.com/api/games",
+        String gameName1 = "Diablo Immortal";
+
+        //Steps
+        APIRequest myApiRequest = new APIRequest();
+        myApiRequest.setURL("https://www.freetogame.com/api/games");
+        myApiRequest.setParameters(
                 "platform","pc",
                 "category","mmorpg");
+        myApiRequest.concatenateURLWithQuery();
+        myApiRequest.executeGETApiRequest();
+        myApiRequest.printRequestResponse();
+
         //Asserts
-        assertEquals("TestFail. ", true, step1);
+        assertEquals("The response is Null.", true, myApiRequest.validateResponseExist());
+        assertEquals("The game is not there", true, myApiRequest.validateTextExistsInResponse(gameName1));
         System.out.println("Test finished");
     }
-
-
-
-
 
     /** @return the suite of tests being tested */
     public static Test suite()

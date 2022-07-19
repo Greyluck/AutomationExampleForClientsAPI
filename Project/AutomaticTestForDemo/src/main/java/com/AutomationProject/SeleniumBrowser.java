@@ -7,16 +7,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.NoSuchElementException;
 
-public class BasicBrowser {
+public class SeleniumBrowser {
 
     public static WebDriver driver = null;
 
     public static void main(String[] args){
-        System.out.println("Exceuting Basic Browser");
+        System.out.println("Executing Basic Browser");
     };
 
     public static boolean returnWebTestResult() throws InterruptedException {
-        return BasicBrowser.executeSimpleUITest();
+        return SeleniumBrowser.executeSimpleUITest();
     }
 
     public static boolean executeSimpleUITest() throws InterruptedException {

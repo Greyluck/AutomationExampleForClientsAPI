@@ -7,9 +7,11 @@
     <list default="true" id="330654d2-ef3c-48b3-8cbd-d202c7a29156" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SimpleInterest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/APIExampleTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/Interest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/APIExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/APIExampleTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
