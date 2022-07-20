@@ -25,15 +25,10 @@ public class UITest extends TestCase {
         SeleniumBrowser myBrowser = new SeleniumBrowser();
         myBrowser.setup(startingPage);
         myBrowser.findByXPathAndClickOnElement(browseGamesButton);
-        System.out.println("checkpoint");
         myBrowser.findByXPathAndClickOnElement(platformComboBox);
-        System.out.println("checkpoint 2");
         myBrowser.findByXPathAndClickOnElement(platformPCMenuItem);
-        System.out.println("checkpoint 3");
         myBrowser.findByXPathAndClickOnElement(genreComboBox);
-        System.out.println("checkpoint 4");
         myBrowser.findByXPathAndClickOnElement(genreRPGMenuItem);
-        System.out.println("checkpoint 5");
 
         /** This make a web test*/
         //assertEquals("The game is not present.", true, myBrowser.findByXPathAndCheckIfExists(gameName));
