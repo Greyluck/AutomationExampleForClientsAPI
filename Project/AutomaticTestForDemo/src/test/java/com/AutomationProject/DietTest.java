@@ -19,7 +19,7 @@ public class DietTest extends TestCase {
         super( testName );
 
         //Definitions
-        String gameName1 = "Chicken Vesuvio";
+        String recipeName = "Chicken Vesuvio";
         String[] headerKey = new String[]{"X-RapidAPI-Key","27b90e1ee9msha5d13334ef8323dp148d61jsn61a87e85ca77"};
         String[] host = new String[]{"X-RapidAPI-Host", "edamam-recipe-search.p.rapidapi.com"};
 
@@ -37,7 +37,7 @@ public class DietTest extends TestCase {
 
         //Asserts
         assertEquals("The response is Null.", true, myApiRequest.validateResponseExist());
-        assertEquals("The game is not there", true, myApiRequest.validateTextExistsInResponse(gameName1));
+        assertEquals("The game is not there", true, myApiRequest.validateTextExistsInResponse(recipeName));
         System.out.println("Test finished");
     }
 
