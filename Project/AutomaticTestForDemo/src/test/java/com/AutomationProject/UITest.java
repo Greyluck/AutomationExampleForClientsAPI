@@ -9,7 +9,7 @@ public class UITest extends TestCase {
      * @param testName name of the test case
      */
     public UITest(String testName ) throws InterruptedException {
-
+        //TODO: Review and add "waits"
         String startingPage = "https://www.freetogame.com/";
 
         // WebElements Xpath
@@ -31,6 +31,7 @@ public class UITest extends TestCase {
         myBrowser.findByXPathAndClickOnElement(genreRPGMenuItem);
 
         /** This make a web test*/
+        //TODO: REMOVE FALSE POSITIVE
         //assertEquals("The game is not present.", true, myBrowser.findByXPathAndCheckIfExists(gameName));
         assertEquals("The game is not present.", true, true);
     }

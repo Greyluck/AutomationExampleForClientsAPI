@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="330654d2-ef3c-48b3-8cbd-d202c7a29156" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/DietTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Executable - MultipleSelector.bat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/APIRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SeleniumBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AutomationProject/SeleniumBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/DietTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/DietTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/AutomationProject/UITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/AutomationProject/UITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AutomationProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AutomationProject-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/APIRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AutomationProject/SeleniumBrowser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AutomationProject/SeleniumBrowser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/DietTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/DietTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/UITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AutomationProject/UITest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,16 +179,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/AutomationProject/UITest.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

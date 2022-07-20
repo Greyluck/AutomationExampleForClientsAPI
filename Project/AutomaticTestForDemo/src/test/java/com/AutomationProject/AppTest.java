@@ -4,7 +4,8 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * In this case a simple query is sent to www.freetogame.com page to check if a specific game matches
+ * In this case a simple GET Request is sent to www.freetogame.com
+ * The response is a list of games that follow the specified criteria.
  * the selected categories.
  */
 

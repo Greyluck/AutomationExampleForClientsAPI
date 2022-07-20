@@ -4,8 +4,10 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * In this case a simple query is sent to www.freetogame.com page to check if a specific game matches
- * the selected categories.
+ * In this case a simple GET Request is sent to the following page
+ * https://rapidapi.com/edamam/api/recipe-search-and-diet/
+ * The response is will be a list of recipes
+ * Then a recipe is verified to exist in that list
  */
 
 public class DietTest extends TestCase {
@@ -28,11 +30,8 @@ public class DietTest extends TestCase {
         APIRequest myApiRequest = new APIRequest();
         myApiRequest.setURL("https://edamam-recipe-search.p.rapidapi.com/search");
         myApiRequest.addParameters("q","chicken");
-
-        //TODO ADD METHODS
-        //myApiRequest.addHeader(headerKey[0],headerKey[1]);
-        //myApiRequest.addHeader(host[0],host[1]);
-
+        myApiRequest.addHeader(headerKey[0],headerKey[1]);
+        myApiRequest.addHeader(host[0],host[1]);
         myApiRequest.executeGETApiRequest();
         myApiRequest.printRequestShortResponse(80);
 

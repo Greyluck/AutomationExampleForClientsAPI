@@ -30,6 +30,9 @@ public class APIRequest {
     static InputStream response = null;
     static String responseBody = "";
 
+    static URLConnection myURLConnection = null;
+    static Map<String, String> headers = new HashMap<>();
+
     // Setters
     public static void setURL(String myURL){
         url = myURL;
@@ -64,11 +67,14 @@ public class APIRequest {
         }
     }
 
+    public static void addHeader(String headerParam, String headerValue){
+        headers.put(headerParam, headerValue);
+    }
+
     // Methods
     public static void executeGETApiRequest(){
         //Sending the query
         System.out.println("Using the following query ["+url+"]");
-        URLConnection myURLConnection = null;
         try {
             myURLConnection = new URL(url).openConnection();
         } catch (IOException e) {
@@ -76,10 +82,6 @@ public class APIRequest {
         }
         myURLConnection.setRequestProperty("Accept-Charset", charset);
 
-        //TODO: REMOVE HARDCODING
-        Map<String, String> headers = new HashMap<>();
-        headers.put("X-RapidAPI-Key", "27b90e1ee9msha5d13334ef8323dp148d61jsn61a87e85ca77");
-        headers.put("X-RapidAPI-Host", "edamam-recipe-search.p.rapidapi.com");
         for (String headerKey : headers.keySet()) {
             myURLConnection.setRequestProperty(headerKey, headers.get(headerKey));
         }
