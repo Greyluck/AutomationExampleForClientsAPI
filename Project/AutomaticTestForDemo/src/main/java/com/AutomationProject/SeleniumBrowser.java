@@ -6,31 +6,28 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
 
 public class SeleniumBrowser {
-    public static WebDriver driver = null;
-    public static int sleepTime = 1000;
-    public static int loadTime  = 1500;
-    public static String chromeDriverPath= ".\\Driver\\chromedriver.exe";
-    public static String startingPage = "https://www.freetogame.com/";
-    public static String mainSearchXPath = "https://www.freetogame.com/";
-    public static void main(String[] args){
+    private static WebDriver driver = null;
+    static int sleepTime = 2000;
+    static int loadTime  = 1500;
+    static String chromeDriverPath= ".\\Driver\\chromedriver.exe";
+    static void main(String[] args){
     }
 
-    public static void start() throws InterruptedException {
+    void setup(String theStartingPage) throws InterruptedException {
         System.out.println("Executing Basic Browser");
 
         // set chromeDriver path
         System.setProperty("webdriver.chrome.driver",chromeDriverPath);
         driver = new ChromeDriver();
 
-        // set chromeDrive waits
-        driver.manage().timeouts().implicitlyWait(sleepTime, TimeUnit.MICROSECONDS);
+        //TODO: set chromeDrive waits
+        //driver.manage().timeouts().implicitlyWait(sleepTime);
 
         // open the web app
         driver.manage().window().maximize();
-        driver.navigate().to(startingPage);
+        driver.navigate().to(theStartingPage);
         Thread.sleep(0,loadTime);
     }
 
@@ -38,11 +35,6 @@ public class SeleniumBrowser {
         WebElement myWebElement;
         myWebElement = driver.findElement(By.xpath(xpath));
         myWebElement.click();
-        try {
-            Thread.sleep(sleepTime);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     //TODO: Add find by ID too

@@ -19,7 +19,7 @@ The project uses the following:
 
 Executing tests
 ---
-To facilitate the use of this project, there will be one or executable files that can help to perfom several tasks.
+To facilitate the use of this project, there will be one or more executable files that can help to perfom several tasks.
 
 **Testing**
 To start a test manually follow this indications:
@@ -29,5 +29,5 @@ To start a test manually follow this indications:
 
   Starting
   1) Open a CMD 
-  2) In the console go to "Project\AutomaticTestForDemo".
+  2) In the console go to "Project\AutomaticTestForDemo" inside this folders
   3) Execute the command "mvn test", this will trigger the test. If dependencies are needed, they will be downloaded before the test.

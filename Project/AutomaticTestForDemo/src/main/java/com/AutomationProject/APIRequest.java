@@ -6,6 +6,8 @@ import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 import static java.lang.Boolean.FALSE;
@@ -66,21 +68,29 @@ public class APIRequest {
     public static void executeGETApiRequest(){
         //Sending the query
         System.out.println("Using the following query ["+url+"]");
-        URLConnection connection = null;
+        URLConnection myURLConnection = null;
         try {
-            connection = new URL(url).openConnection();
+            myURLConnection = new URL(url).openConnection();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        myURLConnection.setRequestProperty("Accept-Charset", charset);
 
-        connection.setRequestProperty("Accept-Charset", charset);
+        //TODO: REMOVE HARDCODING
+        Map<String, String> headers = new HashMap<>();
+        headers.put("X-RapidAPI-Key", "27b90e1ee9msha5d13334ef8323dp148d61jsn61a87e85ca77");
+        headers.put("X-RapidAPI-Host", "edamam-recipe-search.p.rapidapi.com");
+        for (String headerKey : headers.keySet()) {
+            myURLConnection.setRequestProperty(headerKey, headers.get(headerKey));
+        }
 
         try {
-            response = connection.getInputStream();
+            response = myURLConnection.getInputStream();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 
     public static void printRequestResponse(){
         try (Scanner scanner = new Scanner(response)) {
