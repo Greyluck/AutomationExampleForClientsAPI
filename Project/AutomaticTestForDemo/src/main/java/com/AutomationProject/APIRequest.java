@@ -18,20 +18,19 @@ import static java.lang.Boolean.TRUE;
  * (Its main utility is to be used to test the main class)
  */
 public class APIRequest {
-    static String charset = java.nio.charset.StandardCharsets.UTF_8.name(); // Or just "UTF-8"
-    static String url;
+    private static String charset = java.nio.charset.StandardCharsets.UTF_8.name(); // Or just "UTF-8"
+    private static String url;
 
-    static String queryParam = "";
-    static String queryValue = "";
+    private static String queryParam = "";
+    private static String queryValue = "";
 
-    static String query = "";
+    private static String query = "";
 
+    private static InputStream response = null;
+    private static String responseBody = "";
 
-    static InputStream response = null;
-    static String responseBody = "";
-
-    static URLConnection myURLConnection = null;
-    static Map<String, String> headers = new HashMap<>();
+    private static URLConnection myURLConnection = null;
+    private static Map<String, String> headers = new HashMap<>();
 
     // Setters
     public static void setURL(String myURL){
